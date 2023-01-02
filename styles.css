@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;900&family=Roboto:wght@100;300;900&display=swap');
+
+.fonts {
+    /* Big Titles */
+    font-family: 'Playfair Display', serif;
+    /* Menu , paragraph and text */
+    font-family: 'Roboto', sans-serif;
+    /* Buttons */
+    font-family: 'Hammersmith One', sans-serif;
+}
