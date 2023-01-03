@@ -20,6 +20,8 @@
 html {
     width: 100%;
 }
+
+
 header {
     width: 100%;
     position: fixed;
@@ -202,10 +204,93 @@ hr {
     padding-left: 5%;
 }
 
+
+
+.button {
+    border: 1px solid #11bbb5;
+    color: #11bbb5;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: .75rem 1rem;
+    font-size: 1rem
+
+}
+
+.button.is-primary {
+    background-color: transparent;
+
+}
+
+h2 {
+    color: #413d4b;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+h3 {
+    color: #413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0px;
+}
+
+p {
+    color: #413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.5rem;
+
+}
+
+
+.white-bg {
+    padding: 3rem 0px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.is-4-desktop {
+    width: 33.33%;
+}
+
+.is-6-desktop {
+    width: 50%;
+}
+
+.is-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mob-no p {
     float: left;
     padding-left: 5%;
 }
+
 #mob-no-logo #address-logo {
     height: fit-content;
     padding: auto;
@@ -252,3 +337,4 @@ h3 {
     display: flex;
     margin: 5%;
 }
+
