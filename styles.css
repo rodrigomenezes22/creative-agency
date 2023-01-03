@@ -9,6 +9,7 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
+
 * {
     border: 0;
     margin: 0px;
@@ -140,8 +141,70 @@ hr {
 
 .button.is-primary {
     background-color: transparent;
-
 }
+
+.footer-container {
+    background-image: url("images/bgk-footer.png");
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #333;
+    color: white;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+}
+
+.footer-container .column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+.footer-nav {
+    list-style: None;
+    display:flex;
+    justify-content:space-between;
+    padding: 0%;
+}
+
+.footer-title {
+    height: 10vh;
+}
+
+.footer-title p {
+    float: left;
+    max-height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: xx-large;
+}
+
+#footer-link {
+    color: white;
+}
+
+#footer-logo {
+    height: fit-content;
+    padding: auto;
+}
+
+#footer-h3{
+    padding-left: 15%;
+    display:flex;
+    margin-left: 0%;
+    justify-content: flex-start;
+}
+
+.address p{
+    float: left;
+    padding-left: 5%;
+}
+
+
 
 .button {
     border: 1px solid #11bbb5;
@@ -209,16 +272,6 @@ p {
 }
 
 
-/* Story */
-
-
-.columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
 .is-4-desktop {
     width: 33.33%;
 }
@@ -232,3 +285,56 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.mob-no p {
+    float: left;
+    padding-left: 5%;
+}
+
+#mob-no-logo #address-logo {
+    height: fit-content;
+    padding: auto;
+}
+
+
+
+.btn {
+    background-image: url("images/png/paper122.png"); /* Blue background */
+    background-repeat:no-repeat;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+
+}
+  
+.btn:hover {
+    background-color: rgb(241, 9, 9);
+}
+
+
+.icon-icon{
+    justify-content: center;
+    display: flex;
+}
+.icon-icon img {
+    padding: 1%;
+}
+
+.bottom{
+    justify-content: center;
+    display: flex;
+}
+
+h3 {
+    justify-content: center;
+    display: flex;
+}
+
+.form-nl {
+    justify-content: center;
+    display: flex;
+    margin: 5%;
+}
+
