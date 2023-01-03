@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container navigation">
             <div class="navbar-logo">
                 <a href="#home">
@@ -52,7 +52,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora quasi consectetur? Rerum vel a optio aliquam, reprehenderit vero eligendi.
                     </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur, debitis harum dolorem eos minus.</p>
-                    <button class="button is-secondary">Learn More</button>
+                    <button class="button is-primary">Learn More</button>
                 </div>
             </div>
         </div>
@@ -64,34 +64,36 @@
             <div class="expertise-heading heading-border">
               <h2 class="heading-block">Expertise</h2>
               <p class="heading-sub fw-300">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+              <hr class="white-hr">
             </div>
             <ul class="expertise-list mt-8">
               <li class="expertise-item"><img class="expertise-img" src="images\png\screen.png" alt="img icon">
-                <h3 class="expertise-title">Web design &amp; development</h3>
+                <h3>Web design &amp; development</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
               <li class="expertise-item"><img class="expertise-img" src="images\png\pen.png" alt="img icon">
-                <h3 class="expertise-title">Branding identity</h3>
+                <h3>Branding identity</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
               <li class="expertise-item"><img class="expertise-img" src="images\png\mobile.png" alt="img icon">
-                <h3 class="expertise-title">Mobile app</h3>
+                <h3>Mobile app</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
               <li class="expertise-item"><img class="expertise-img" src="images\png\graph.png" alt="img icon">
-                <h3 class="expertise-title">search engine optimization</h3>
+                <h3>search engine optimization</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
               <li class="expertise-item"><img class="expertise-img" src="images\png\gameboy.png" alt="img icon">
-                <h3 class="expertise-title">game development</h3>
+                <h3>game development</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
               <li class="expertise-item"><img class="expertise-img" src="images\png\heart.png" alt="img icon">
-                <h3 class="expertise-title">Made with love</h3>
+                <h3>Made with love</h3>
                 <p class="expertise-desc">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
               </li>
             </ul>
         </div>
+        
     </section>
     </section>
     <section id="team"></section>
@@ -100,21 +102,24 @@
         <div class="container">
             <div class="footer-container">
                 <div class="column">
-                    <div class="footer-title">
-                        <p><img id="footer-logo" src="images\png\logo.png" alt="logo website"></p>
-                        <h3 id="footer-h3"> tajam</h3>
+                    <div class="navbar-logo">
+                        <a href="#home">
+                            <img src="images/png/logo.png" alt="Logo"> tajam
+                        </a>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi molestias excepturi placeat
                         repellendus itaque laborum sequi minus blanditiis repudiandae!</p>
+                        <br>
                     <ul class="footer-nav">
-                        <li><a id="footer-link" href="help">Help</a></li>
-                        <li><a id="footer-link" href="terms">Terms & conditions</a></li>
-                        <li><a id="footer-link" href="privacy">privacy</a></li>
+                        <li><a class="footer-link" href="help">Help</a></li>
+                        <li><a class="footer-link" href="terms">Terms & conditions</a></li>
+                        <li><a class="footer-link" href="privacy">privacy</a></li>
                     </ul>
 
                 </div>
                 <div class="column">
-                    <h3>Our Studio</h3>
+                    <h3 class="is-white is-left">Our Studio</h3>
+                    <br>
                     <div class="media">
                         <div class="icon-footer">
                             <img id="address-logo" src="images\png\big104.png" alt="location">
@@ -132,7 +137,7 @@
                 </div>
 
                 <div class="column">
-                    <h3>STAY IN TOUCH</h3>
+                    <h3  class="is-white is-left">STAY IN TOUCH</h3>
                     <div class="newsLetter">
                         <form class="form-nl">
                             <input type="text" name="email" placeholder="Subscribe Our newsletter" required>
@@ -150,13 +155,14 @@
                         <img src="images\png\youtube.png" alt="youtube">
                     </div>
 
-                    <div class="bottom">copyright &copy; 2015 - Tajem Creative</div>
+                    <p class="bottom">copyright &copy; 2015 - Tajem Creative</p>
 
                 </div>
 
             </div>
         </div>
     </footer>
+    <script src="custom.js"></script>
 </body>
 
 </html>
