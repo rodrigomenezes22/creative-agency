@@ -9,6 +9,138 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 
+
+* {
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    width: 100%;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-size: 1.8rem;
+    color: #11bbb5;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    margin-right: .5rem;
+    padding: .5rem
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-item a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .4rem ;
+    font-size: .8rem;
+}
+
+.navbar-item.active a {
+    color: #11bbb5;
+}
+
+.container {
+    margin: 0px auto; 
+    max-width: 960px;
+}
+
+section {
+    width: 100%;
+}
+
+.hero {
+    background: url(/images/bgk-header.png);
+    background-position: bottom center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body {
+    max-width: 790px;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    width: 50px;
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 0px auto;
+}
+
+.hero-body h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.hero-body p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 1.5rem .75rem;
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+
+.button {
+    border: 1px solid #11bbb5;
+    color: #11bbb5;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: .75rem 1rem;
+    font-size: 1rem
+
+}
+
+.button.is-primary {
+    background-color: transparent;
+}
+
 .footer-container {
     background-image: url("images/bgk-footer.png");
     display: flex;
