@@ -8,6 +8,76 @@
     /* Buttons */
     font-family: 'Hammersmith One', sans-serif;
 }
+.expertise {
+    grid-column: center-start / center-end;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: min-content 1fr;
+    grid-template-rows: -webkit-min-content 1fr;
+    grid-template-rows: min-content 1fr;
+ }
+    .expertise-heading {
+      display: -ms-grid;
+      display: grid;
+      justify-items: center;
+      -ms-flex-line-pack: start;
+      align-content: start; 
+    }
+    .expertise-list {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (minmax(33.33%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: start;
+     }
+      @media only screen and (max-width: 54em) {
+        .expertise-list {
+          -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+         } 
+        }
+      @media only screen and (max-width: 33em) {
+        .expertise-list {
+          -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr; }
+         }
+    .expertise-item {
+      padding: 3rem;
+      display: -ms-grid;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      -ms-grid-rows: minmax(8.5rem, 1fr) minmax(5rem, max-content) min-content;
+      grid-template-rows: minmax(8.5rem, 1fr) minmax(5rem, -webkit-max-content) -webkit-min-content;
+      grid-template-rows: minmax(8.5rem, 1fr) minmax(5rem, max-content) min-content;
+     }
+      @media only screen and (max-width: 65em) {
+        .expertise-item {
+          -ms-grid-rows: minmax(7rem, 1fr) minmax(3rem, max-content) min-content;
+          grid-template-rows: minmax(7rem, 1fr) minmax(3rem, -webkit-max-content) -webkit-min-content;
+          grid-template-rows: minmax(7rem, 1fr) minmax(3rem, max-content) min-content;
+         } 
+        }
+      @media only screen and (min-width: 54em) {
+        .expertise-item {
+          border-right: 1px solid #eee; 
+        }
+          .expertise-item:nth-of-type(n+4) {
+            border-top: 1px solid #eee;
+         }
+          .expertise-item:nth-of-type(3n+3) {
+            border-right: 0; 
+        } 
+    }
+    .expertise-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.4rem; }
+    .expertise-desc {
+      font-weight: 300;
+      word-spacing: 2px; }
 
 .footer-container {
     background-image: url("images/bgk-footer.png");
