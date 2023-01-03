@@ -180,7 +180,7 @@ section {
 }
 
 .hero {
-    background: url(/images/bgk-header.png);
+    background: url(images/bgk-header.png);
     background-position: bottom center;
     background-size: cover;
     height: 70vh;
@@ -485,8 +485,9 @@ p {
 }
 
 .team  {
-    background-image: url("images/bgk-middle.png");
+    background-image: url("images/bgk-header.png");
     background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: calc((300/1600)*100%) [center-start] 1fr [center-end] calc((300/1600)*100%); 
 }
@@ -499,72 +500,71 @@ p {
 }
 
 .team-inner {
-   
-    /* display: -ms-grid; */
     display: grid;
-    /* -ms-grid-rows: min-content 1fr (min-content)[2]; */
-    /* grid-template-rows: -webkit-min-content 1fr repeat(2, -webkit-min-content); */
-    /* grid-template-rows: min-content 1fr repeat(2, min-content); */
     grid-column: center-start / center-end;
 }
 
 .team-heading {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
+
 .lineHorizontal__container {
-    align-items: center;
     display: flex;
     height: 50%;
-  }
-  .lineHorizontal {
+    align-items:center;
+    justify-content: center;
+}
+.lineHorizontal {
     border-top: 1px solid rgb(5, 178, 247);
-    width: 100%;
-  }
+    width: 3%;
+    margin-bottom: 3%;
+}
 
 .team .heading-block,
 .team .heading-sub {
     color: white;
 }
 
+.heading-block {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-weight: normal;
+}
+
 .team-list {
     /* display: -ms-grid; */
     display: grid;
     /* -ms-grid-columns: (minmax(calc(25% - 2.2rem), 1fr))[auto-fit]; */
-    grid-template-columns: repeat(auto-fit, minmax(calc(25% - 2.2rem), 1fr));
-    grid-column-gap: 2rem;
-    margin-bottom: 5rem;
-}
-
-@media only screen and (max-width: 50em) {
-    .team-list {
-        -ms-grid-columns: (minmax(calc(50% - 2.2rem), 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 2.2rem), 1fr));
-    }
-}
-
-@media only screen and (max-width: 26em) {
-    .team-list {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.1rem;
+    margin-bottom:1rem;
 }
 
 .team-item {
     border: 1px solid #c6c4c9;
-    margin-bottom: 2rem;
+    /* margin-bottom: 1rem; */
     list-style: none;
+    height: fit-content;
+    width: 65%;
+}
+
+.team-img {
+    width: 100%;
+    height: fit-content;
 }
 
 .team-info {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     text-align: center;
     background: white;
+    width: 100%;
+    height: fit-content;
 }
 
 .team-join {
-    color: rgb(8, 8, 8);
+    color: #11bbb5;
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -574,4 +574,8 @@ p {
 .team-button {
     -ms-grid-column-align: center;
     justify-self: center;
+    color: #11bbb5;
+    border: 2px solid #11bbb5;
+    margin-bottom: 5%;
+    padding: 1%;
 }
