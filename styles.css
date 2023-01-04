@@ -418,3 +418,62 @@ h3 {
     margin: 5%;
 }
 
+/* Lilii's section */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the container section */
+.container-form {
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.grid_logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 6px;
+  padding: 20px;
+}
+.column2 {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.grid_logo img {
+  width: 50%;
+  height: auto;
+  margin: 1rem .5rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FIND how to make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
