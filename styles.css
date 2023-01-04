@@ -389,6 +389,51 @@ p {
 
 }
 
+#video {
+    min-height: 50vh;
+    background-image: url(/images/bgk-middle.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#video svg {
+    width: 80px;
+    cursor: pointer;
+}
+
+.play-button {
+    stroke: #FFFFFF;
+    cursor: pointer;
+    transition: stroke .7s;
+}
+
+
+.play {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    transition: all .7s;
+    cursor: pointer;
+}
+
+.play h3 {
+    color: white;
+    transition: all .7s;
+}
+
+.play:hover h3  {
+    color: #11bbb5;
+    cursor: pointer;
+}
+.play:hover .play-button  {
+    stroke: #11bbb5;
+}
+
 
 .white-bg {
     padding: 3rem 0px;
@@ -488,8 +533,7 @@ p {
     background-image: url("images/bgk-header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: calc((300/1600)*100%) [center-start] 1fr [center-end] calc((300/1600)*100%); 
+
 }
 
 @media only screen and (max-width: 65em) {
@@ -499,14 +543,17 @@ p {
     }
 }
 
-.team-inner {
-    display: grid;
-    grid-column: center-start / center-end;
+.team {
+    padding: 4rem 0px;
 }
 
 .team-heading {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.team-heading h2 {
+    margin-bottom: .25rem;
 }
 
 .lineHorizontal__container {
@@ -546,7 +593,7 @@ p {
     /* margin-bottom: 1rem; */
     list-style: none;
     height: fit-content;
-    width: 65%;
+    margin: .5rem;
 }
 
 .team-img {
