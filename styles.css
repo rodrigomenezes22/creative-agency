@@ -521,7 +521,9 @@ p {
     display: flex;
 }
 
-
+#form {
+    padding: 4rem 0px;
+}
 
 .form-nl {
     justify-content: center;
