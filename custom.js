@@ -19,3 +19,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function playMovie() {
+    const videoWrapper = document.getElementsByClassName("video-wrapper")[0];
+    videoWrapper.classList.toggle("in-view");
+}
+
