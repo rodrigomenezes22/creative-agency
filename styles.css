@@ -710,8 +710,8 @@ textarea {
 
 .video-player {
     background-color: white;
-    width: 640px;
-    height: 320px;
+    width: 560px;
+    height: 315px;
 }
 
 /* FIND how to make the two columns stack on top of each other instead of next to each other */
