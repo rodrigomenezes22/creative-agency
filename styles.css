@@ -256,7 +256,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: white;
 
 }
@@ -528,9 +528,12 @@ p {
 .form-nl {
     justify-content: center;
     display: flex;
-    margin: 5%;
+    margin: 2rem 0px;
 }
 
+.form-nl input[type="text"] {
+    margin: 0px;
+}
 
 .team  {
     background-image: url("images/bgk-header.png");
